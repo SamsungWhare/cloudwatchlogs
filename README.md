@@ -12,7 +12,8 @@ export AWS_ACCESS_KEY=xxxxxx
 export AWS_SECRET_KEY=xxxxxx 
 export MIXPANEL_TOKEN=xxxxxx
 export LOG_GROUP_NAME=/ecs/<log group>  # log group to fetch
-export CWL_ENV=<your env namespace> # defaults to dev
+export CWL_ENV=<your env namespace>  # defaults to dev
+export STREAM_LOOKBACK_COUNT=1  # the number of streams you need to process (default 1) ordered by latest streams  
 ```
 
 ```export MIXPANEL_TOKEN=xxxx``` if you want to report the log events to Mixpanel
